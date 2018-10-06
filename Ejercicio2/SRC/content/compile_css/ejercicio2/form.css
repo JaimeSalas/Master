@@ -1,0 +1,63 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'http://fonts.googleapis.com/css?family=Share:400,700';
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700s';
+div {
+  display: block;
+  line-height: 40px;
+  width: 120px;
+  margin: 2px;
+  padding: 10px;
+  padding-left: 20px;
+  height: 60px; }
+
+p {
+  padding-left: 2px; }
+
+.default_font_1 {
+  font-family: cursive, sans-serif; }
+
+.default_font_2 {
+  font-family: bold, sans-serif; }
+
+.pFont_1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large; }
+
+.pFont_2 {
+  font-family: 'Times New Roman', serif;
+  font-size: medium; }
+
+.sFont_1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: large; }
+
+.sFont_2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large; }
+
+.box {
+  border: 1px solid gray;
+  border-radius: 2px; }
+
+.base_1 {
+  background: red; }
+
+.base_2 {
+  background: blue; }
+
+.important_1 {
+  background: brown; }
+
+.important_2 {
+  background: darkblue; }
+
+.warning_1 {
+  background: #f77e7e; }
+
+.warning_2 {
+  background: lightgreen; }
+
+.shadow {
+  box-shadow: -10px 10px 8px #363636;
+  line-height: 25px; }

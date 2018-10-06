@@ -1,0 +1,69 @@
+
+@import "Tema1.scss";
+
+
+div {
+    display: block;
+    line-height: 40px;
+    width: 120px;
+    margin: 2px;
+    padding: 10px;
+    padding-left: 20px;
+    height: 60px;
+}
+
+p {
+    padding-left: 2px;
+}
+
+.default_font_1 {
+    @include fDefault(1);
+}
+.default_font_2 {
+    @include fDefault(2);
+}
+
+.pFont_1 {
+    @include pFont(1);
+}
+.pFont_2 {
+    @include pFont(2);
+}
+
+.sFont_1 {
+    @include sFont(1);
+}
+.sFont_2 {
+    @include sFont(2);
+}
+
+.box {
+    @include box();
+}
+
+
+.base_1 {
+    @include base(1);
+}
+.base_2 {
+    @include base(2);
+}
+
+.important_1 {
+    @include important(1);
+}
+.important_2 {
+    @include important(2);
+}
+
+.warning_1 {
+    @include warning(1);
+}
+.warning_2 {
+    @include warning(2);
+}
+
+.shadow {
+    @include shadow;
+    line-height: 25px;
+}
