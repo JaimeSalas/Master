@@ -1,0 +1,50 @@
+
+
+
+$prc:0;
+
+/* Basics */
+@mixin colores($color) {
+    @for $i from 1 through 9 {
+        div:nth-child(#{$i}) {
+            @if $i<5 {
+                $prc: 1/$i * 50;
+                background: darken($color, $prc) ;
+                
+            }@else {
+                @if $i>5 {
+                    
+                    $prc: ($i * 10) - 50;
+                    background: lighten($color, $prc) ;
+                }@else{
+                    background: $color ;
+                }
+            }
+        
+        }
+    }
+}
+
+
+
+// .banner {
+//     background-color: map-get($palette,blue);
+//    }
+
+div {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 80px;
+    margin: 2px;
+}
+
+.red {
+    @include colores(red);
+}
+.green {
+    @include colores(green);
+}
+.blue {
+    @include colores(blue);
+}
+
