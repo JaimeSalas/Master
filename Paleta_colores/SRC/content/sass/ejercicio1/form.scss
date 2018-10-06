@@ -9,7 +9,7 @@ $prc:0;
         div:nth-child(#{$i}) {
             @if $i<5 {
                 $prc: 1/$i * 50;
-                background: darken($color, $prc) ;
+                background: darken($color, $prc - 11) ;
                 
             }@else {
                 @if $i>5 {

@@ -6,16 +6,16 @@ div {
   margin: 2px; }
 
 .red div:nth-child(1) {
-  background: black; }
+  background: #380000; }
 
 .red div:nth-child(2) {
-  background: maroon; }
+  background: #b80000; }
 
 .red div:nth-child(3) {
-  background: #aa0000; }
+  background: #e20000; }
 
 .red div:nth-child(4) {
-  background: #bf0000; }
+  background: #f70000; }
 
 .red div:nth-child(5) {
   background: red; }
@@ -36,13 +36,13 @@ div {
   background: black; }
 
 .green div:nth-child(2) {
-  background: #000100; }
+  background: #003900; }
 
 .green div:nth-child(3) {
-  background: #002b00; }
+  background: #006300; }
 
 .green div:nth-child(4) {
-  background: #004000; }
+  background: #007800; }
 
 .green div:nth-child(5) {
   background: green; }
@@ -60,16 +60,16 @@ div {
   background: #4dff4d; }
 
 .blue div:nth-child(1) {
-  background: black; }
+  background: #000038; }
 
 .blue div:nth-child(2) {
-  background: navy; }
+  background: #0000b8; }
 
 .blue div:nth-child(3) {
-  background: #0000aa; }
+  background: #0000e2; }
 
 .blue div:nth-child(4) {
-  background: #0000bf; }
+  background: #0000f7; }
 
 .blue div:nth-child(5) {
   background: blue; }
