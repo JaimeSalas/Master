@@ -1,0 +1,26 @@
+@import "layauts.scss";
+body {
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100 vh;
+    flex-direction: column;
+}
+.main-display {
+    flex-grow: 1;
+}
+@media screen and (min-width: 55rem) {
+        @include full-resolution;
+}
+@media screen and (max-width: 54.9rem) {
+        @include small-resolution;
+}
+.Logo {
+    background-color: pink;
+    flex-basis: 100px
+}
+.lemoncode {
+    background-color: pink;
+}
+.user {
+    background-color: pink;
+}

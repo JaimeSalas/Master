@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100 vh;
+  flex-direction: column; }
+
+.main-display {
+  flex-grow: 1; }
+
+@media screen and (min-width: 55rem) {
+  .main-content {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; }
+  .menu {
+    flex: 1 40%;
+    max-height: 40px; }
+  .tab {
+    padding: 10px;
+    flex: 1 10%;
+    background-color: white;
+    font-size: 8px; }
+  max-height: 30px; }
+
+@media screen and (max-width: 54.9rem) {
+  .main-content {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    font-size: medium;
+    padding: 10px; }
+  .menu {
+    flex: 1 30%;
+    max-height: 40px; }
+  .tab {
+    padding: 10px;
+    flex: 1 0%;
+    max-height: 30px;
+    margin: 8px;
+    font-size: 5px;
+    order: 2;
+    background-color: white; }
+  .blanco {
+    flex: 1 100%;
+    order: 1;
+    min-height: 600px;
+    background-color: white; } }
+
+.Logo {
+  background-color: pink;
+  flex-basis: 100px; }
+
+.lemoncode {
+  background-color: pink; }
+
+.user {
+  background-color: pink; }

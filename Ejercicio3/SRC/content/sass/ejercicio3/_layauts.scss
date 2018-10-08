@@ -1,0 +1,44 @@
+@mixin full-resolution{
+    .main-content{
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    .menu  {
+        flex: 1 40%;
+        max-height: 40px;
+      }
+    .tab {
+        padding: 10px;
+        flex: 1 10%;
+        background-color: white;
+        font-size: 8px; }
+        max-height: 30px;
+}
+@mixin small-resolution{
+    .main-content {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        font-size: medium;
+        padding: 10px; }
+    .menu {
+        flex: 1 30%;
+        max-height: 40px; }
+    .tab {
+        padding: 10px;
+        flex: 1 0%;
+        max-height: 30px;
+        margin: 8px;
+        font-size: 5px;
+        order:2;
+        background-color: white; }
+    .blanco {
+        flex: 1 100%;
+        order: 1;
+        min-height: 600px;
+        background-color: white;
+    } 
+}
