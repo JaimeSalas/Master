@@ -1,0 +1,75 @@
+
+@import "layauts.scss";
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100 vh;
+    flex-direction: column;
+}
+.main-display {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 75rem) {
+    .main-content {
+        @include full-resolution;
+    }
+}
+@media screen and (max-width: 74.9rem) and (min-width: 60rem) {
+    .main-content {
+        @include large-resolution;
+    }
+}
+@media screen and (max-width: 59.9rem) and (min-width: 48rem) {
+    .main-content {
+        @include medium-resolution;
+    }
+}
+@media screen and (max-width: 47.9rem) {
+    
+        @include small-resolution;
+
+
+    
+}
+
+.blanco1 {
+    grid-area: blanco1;
+    background-color: white;
+}
+.Logo {
+    grid-area: Logo;
+    background-color: pink;
+    flex-basis: 100px
+    
+}
+.Logo2 {
+    grid-area: Logo2;
+    background-color: pink;
+    
+}
+.Logo3 {
+    grid-area: Logo3;
+    background-color: pink;
+}
+.Lemoncode {
+    grid-area: Lemoncode;
+    background-color: pink;
+}
+.Users {
+    grid-area: Users;
+    text-align: right;
+    background-color: pink;
+}
+.column1 {
+    grid-area: column1;
+    background-color: yellow;
+  
+}
+
+.column2 {
+    grid-area: column2;
+    background-color: blue;
+}
