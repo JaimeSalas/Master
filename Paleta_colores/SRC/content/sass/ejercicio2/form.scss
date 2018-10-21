@@ -2,34 +2,26 @@
 
 
 $prc:0;
+$fiftyPercent: 50;
 
 /* Basics */
 @mixin colores($color) {
     @for $i from 1 through 9 {
         div:nth-child(#{$i}) {
             @if $i<5 {
-                $prc: 1/$i * 50;
+                $prc: 1/$i * $fiftyPercent;
                 background: darken($color, $prc - 11) ;
                 
-            }@else {
-                @if $i>5 {
-                    
-                    $prc: ($i * 10) - 50;
+            }@else if $i>5 {
+                    $prc: ($i * 10) - $fiftyPercent;
                     background: lighten($color, $prc) ;
-                }@else{
-                    background: $color ;
-                }
+                
+            } @else {
+                background: $color ;
             }
-        
         }
     }
 }
-
-
-
-// .banner {
-//     background-color: map-get($palette,blue);
-//    }
 
 div {
     display: inline-block;
