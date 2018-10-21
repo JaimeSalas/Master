@@ -45,7 +45,7 @@
 @mixin small-resolution{
     .main-content{
         display: flex;  
-        flex-flow: row wrap;
+        flex-flow: column;
         font-weight: bold;
         text-align: center;
         padding: 10px;
